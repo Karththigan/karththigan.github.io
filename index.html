@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karththigan</title>
+    <link rel="icon" type="image/icon" href="assets/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/logo.png">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin-top: 50px; /* Offset for the navbar */
+        }
+        .main {
+            padding: 60px 0;
+        }
+        .navbar {
+            display: none;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            height: 50px; /* Reduced height */
+            line-height: 50px; /* Aligns text vertically within the navbar */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar" id="navbar">
+        <a href="#contact_scroll" class="btn btn-rabbit" onclick="window.scrollTo(0, 0);">Karththigan</a>
+        <a href="#about_scroll" class="btn btn-rabbit">About</a>
+        <a href="#work_scroll" class="btn btn-rabbit">Experience</a>
+        <a href="#project_scroll" class="btn btn-rabbit">Projects</a>
+        <a class="btn btn-rabbit" href="https://www.linkedin.com/in/karththigan/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="btn btn-rabbit" href="https://github.com/Karththigan"><i class="fa fa-github" aria-hidden="true"></i></a>    
+    </div>
+
+    <div id="index">
+        <div class="container main">
+            <div class="row home" style="display: flex; justify-content: 50vw; align-items: center; height: 50vh;">
+                <div id="index_right" class="col-md-6 text-center" style="flex: 1;">
+                    <div class="logo">
+                        <h4 class="myname">Hi, I'm Karththigan</h4>
+                    </div>
+                    <p class="home-description">
+                        Materials Science Engineering X Bioinformatics
+                    </p>
+                    <div class="btn-group-vertical">
+                        <a href="#about_scroll" class="btn btn-rabbit">About me</a>
+                        <a href="#work_scroll" class="btn btn-rabbit">Experience</a>
+                        <a href="#project_scroll" class="btn btn-rabbit">Projects</a>
+                    </div>      
+                    <div class="social">
+                        <a href="mailto: karththigan.pushparaj@mail.utoronto.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/karththigan/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Karththigan"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about_scroll" class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left" id="about_left">
+                    <h2 class="page-title text-center">About me</h2>
+                    <p class="info">
+                        I am currently a Data Engineering Intern at <a class="special-link" href="https://www.wattpad.com/">Wattpad</a>
+                    </p>
+                    <p class="info">
+                        I'm also in my final year of my Bachelor's in Materials Engineering (minor in Bioengineering) at the University of Toronto             
+                    </p>
+                    <p class="info">
+                        Outside of work, I like to play piano, bake, and read                   
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work_scroll" class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="work_right">
+                    <h2 class="page-title text-center">Experience</h2>
+                    <div id="experience">
+                        <div class="tab-container">
+                            <div class="tabs">
+                                <button class="tab-button" onclick="showPanel(0)">Wattpad</button>
+                                <button class="tab-button" onclick="showPanel(1)">Princess Margaret Research Tower</button>
+                                <button class="tab-button" onclick="showPanel(2)">University Health Network</button>
+                                <button class="tab-button" onclick="showPanel(3)">University of Toronto</button>
+                            </div>
+                            <div class="tab-panel">
+                                <div class="tab-content">
+                                    <div class="job-title">Data Engineering Intern</div>
+                                    <div class="job-company">Wattpad</div>
+                                    <div class="job-duration">September 2023 - Present</div>
+                                    <ul class="job-description">
+                                        <li>Created a data pipeline using Apache Airflow, Spark, AWS DMS and Luigi to collect and process ad performance data for 10 000+ and growing users daily, providing critical data for business metrics</li>
+                                        <li>Orchestrating the migration from legacy event driven system to new eventing platform by creating events with Protocol Buffers and developing integration tests</li>
+                                        <li>Proactively developing and resolving daily errors in critical data pipelines using Python and communicating downstream impacts with stakeholders.</li>
+                                        <li>Collaborating with senior engineers and product management following best practices for the full development cycle, including code reviews, build processes, and testing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-panel">
+                                <div class="tab-content">
+                                    <div class="job-title">Undergraduate Research Assitant</div>
+                                    <div class="job-company">Princess Margaret Cancer Research Tower: Hoffman Lab</div>
+                                    <div class="job-duration">May 2023 - August 2023</div>
+                                    <ul class="job-description">
+                                        <li>Researched distortions in single-cell RNA-seq data caused by dimensionality reduction techniques such as PCA, t-SNE, and UMAP through collaboration with senior lab members</li>
+                                        <li>Developed metrics and Python scripts to highlight distortions and bias in data visualization tools, and presented findings to senior lab members</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-panel">
+                                <div class="tab-content">
+                                    <div class="job-title">Data Developer</div>
+                                    <div class="job-company">University Health Network</div>
+                                    <div class="job-duration">September 2022 - March 2023</div>
+                                    <ul class="job-description">
+                                        <li>Assisted in the development of software for clinical data management and data integration using Stata</li>
+                                        <li>Debugged automated reporting tools related to patient enrollment as clinical studies expanded across hospital sites</li>
+                                        <li>Liaised with other developers to improve the quality of patient-reported data for use in automated periodic status reports</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-panel">
+                                <div class="tab-content">
+                                    <div class="job-title">Educational Technology Assistant</div>
+                                    <div class="job-company">University of Toronto: Educational Technology Office</div>
+                                    <div class="job-duration">May 2022 - August 2022</div>
+                                    <ul class="job-description">
+                                        <li>Created a JavaScript program that generates personalized certificates for online courses, eliminating manual creation, and created presentations to train senior staff on its implementation</li>
+                                        <li>Evaluated features of new learning software and presented feedback by conducting presentations that summarize findings to panels of educators to improve user experience</li>
+                                        <li>Optimized office workflows by updating internal technical documentation and providing meeting notes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div id="project_scroll" class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="work_right">
+                    <h2 class="page-title text-center">Projects</h2>
+                    <p class="subtitle">This is a selection of my web design and development work...</p>
+                    <p class="info">There are many variations of passages of Lorem Ipsum available...</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scroll for internal links
+            $('a[href^="#"]').on('click', function(event) {
+                var target = this.hash;
+                var $target = $(target);
+                $('html, body').animate({
+                    scrollTop: $target.offset().top
+                }, 500);
+            });
+
+            // Show navbar on scroll
+            $(window).on('scroll', function() {
+                var nav = $('#navbar');
+                var mainSection = $('#index').offset().top + $('#index').height();
+                
+                if ($(window).scrollTop() >= mainSection - 20) {
+                    nav.fadeIn();
+                } else {
+                    nav.fadeOut();
+                }
+            });
+        });
+
+        // JavaScript for tab functionality
+        function showPanel(index) {
+            var tabs = document.querySelectorAll('.tab-panel');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active');
+            });
+            tabs[index].classList.add('active');
+        }
+
+        // Show the first panel by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showPanel(0);
+        });
+    </script>
+</body>
+</html>
