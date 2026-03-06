@@ -5,7 +5,7 @@ import LayoutHeaderNav from '../components/LayoutHeaderNav.jsx';
 export default function Courses() {
   return (
     <>
-      <LayoutHeaderNav isVisible />
+      <LayoutHeaderNav alwaysVisible />
       <CoursesPage />
     </>
   );

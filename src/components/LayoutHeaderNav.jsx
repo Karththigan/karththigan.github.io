@@ -1,8 +1,10 @@
 ﻿import React from 'react';
 
-export default function LayoutHeaderNav({ isVisible }) {
+export default function LayoutHeaderNav({ isVisible = false, alwaysVisible = false }) {
+  const visible = alwaysVisible || isVisible;
+
   return (
-    <div className={`navbar${isVisible ? ' is-visible' : ''}`} id="navbar">
+    <div className={`navbar${visible ? ' is-visible' : ''}`} id="navbar">
       <a href="#index" className="btn btn-rabbit">Karththigan</a>
       <a href="#about_scroll" className="btn btn-rabbit">About</a>
       <a href="#work_scroll" className="btn btn-rabbit">Experience</a>
