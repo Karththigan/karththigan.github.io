@@ -1,0 +1,105 @@
+﻿import React from 'react';
+
+export default function CoursesPage() {
+  return (
+    <div className="container">
+      <h2 className="page-title text-center">Courses by Semester</h2>
+
+      <div className="semester-row">
+        <div className="semester">
+          <h3 className="semester-title">Fall 2020</h3>
+          <ul className="course-list">
+            <li>BIO1130: Introduction to Organismal Biology</li>
+            <li>CHG1123: Chemical Engineering Fundamentals</li>
+            <li>CHM1711: Principes de chimie</li>
+            <li>MAT1720: Calcul diffÃ©rentiel et intÃ©gral I</li>
+            <li>PHY1521: Principes fondamentaux de physique I</li>
+          </ul>
+        </div>
+        <div className="semester">
+          <h3 className="semester-title">Winter 2021</h3>
+          <ul className="course-list">
+            <li>BIO1540: Introduction Ã  la biologie cellulaire</li>
+            <li>CHG1371: Numerical Methods and Engineering Computation in Chemical Engineering</li>
+            <li>CHM1721: Chimie organique I</li>
+            <li>MAT1322: Calculus II</li>
+            <li>PHY1122: Fundamentals of Physics II</li>
+          </ul>
+        </div>
+        <div className="semester">
+          <h3 className="semester-title">Summer 2021</h3>
+          <ul className="course-list">
+            <li>CHM2120: Organic Chemistry II</li>
+            <li>MAT2322: Calulus II for Engineers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="semester-row">
+        <div className="semester">
+          <h3 className="semester-title">Fall 2021</h3>
+          <ul className="course-list">
+            <li>APS111: Engineering Strategies and Practice I</li>
+            <li>LINA01H3: Introduction to Linguistics</li>
+            <li>MAT294: Calculus and Differential Equations</li>
+            <li>MSE202: Thermodynamics I</li>
+            <li>MSE219: Structure and Characterization of Materials</li>
+            <li>MSE296: Materials Paradigm At a Glance I</li>
+            <li>MSE298: Communications I</li>
+          </ul>
+        </div>
+        <div className="semester">
+          <h3 className="semester-title">Winter 2022</h3>
+          <ul className="course-list">
+            <li>APS112: Engineering Strategies and Practice II</li>
+            <li>MSE217: Diffusion and Kinetics</li>
+            <li>MSE218: Phase Transformations</li>
+            <li>MSE222: Mechanics of Solid Materials</li>
+            <li>MSE238: Engineering Statistics and Numerical Methods</li>
+            <li>MSE296: Materials Paradigm At a Glance II</li>
+            <li>MSE298: Communications II</li>
+          </ul>
+        </div>
+        <div className="semester">
+          <h3 className="semester-title">Summer 2022</h3>
+          <ul className="course-list">
+            <li>PEY300 - Educational Technology Assistant</li>
+          </ul>
+        </div>
+      </div>
+      <div className="semester-row">
+        <div className="semester">
+          <h3 className="semester-title">Fall 2022</h3>
+          <ul className="course-list">
+            <li>CHE353: Engineering Biology</li>
+            <li>LIN241: Introduction to Semantics</li>
+            <li>MIE258: Engineering Economics and Accounting</li>
+            <li>MSE302: Thermodynamics II</li>
+            <li>MSE316: Mechanical Behavior of Materials</li>
+            <li>MSE351: Design and Simulation of Materials Processes</li>
+            <li>MSE396: Materials Manufacturing and Design I</li>
+          </ul>
+        </div>
+        <div className="semester">
+          <h3 className="semester-title">Winter 2023</h3>
+          <ul className="course-list">
+            <li>MSE403: Data Science and Analytics for Materials Engineering</li>
+            <li>MSE335: Materials Physics</li>
+            <li>MSE332: Heat and Mass Transfer for Materials Processesing</li>
+            <li>BME331: Physiological Control Systems</li>
+            <li>MSE397: Materials Manufacturing and Design II</li>
+            <li>MSE355: Materials Production</li>
+            <li>LIN305: Quantitative Methods in Linguistics</li>
+            <li>HPS100 Introduction to History and Philosophy of Science and Technology</li>
+          </ul>
+        </div>
+        <div className="semester">
+          <h3 className="semester-title"> Summer 2023</h3>
+          <ul className="course-list">
+            <li>Computer Science Undergraduate Summer Research Program -  Research Student at Princess Margaret Cancer Research Tower - Hoffman Lab</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Karththigan</title>
     <link rel="icon" type="image/icon" href="/assets/images/logo.png">
@@ -12,36 +11,41 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
         body {
-            margin-top: 50px; /* Offset for the navbar */
+            font-family: 'Crimson Text', serif;
+            padding: 60px;
         }
-        .main {
-            padding: 60px 0;
+        .semester-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
         }
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #f8f8f8;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            height: 50px; /* Reduced height */
-            line-height: 50px; /* Aligns text vertically within the navbar */
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.4s ease;
+        .semester {
+            flex: 1;
+            margin: 0 10px;
         }
-        .navbar.is-visible {
-            opacity: 1;
-            pointer-events: auto;
+        .semester-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-family: 'Josefin Sans', sans-serif; /* Matching the About me section font */
+        }
+        .course-list {
+            list-style-type: disc;
+            padding-left: 25px;
+            font-weight: 400;
+            font-size: 10px;
+            font-family: 'Josefin Sans', sans-serif; /* Matching the About me section font */
+            color:  #585757;
+        }
+        .course-list li {
+            font-size: 18px;
+            /* margin-bottom: 10px; */
         }
     </style>
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/courses.jsx"></script>
 </body>
 </html>
